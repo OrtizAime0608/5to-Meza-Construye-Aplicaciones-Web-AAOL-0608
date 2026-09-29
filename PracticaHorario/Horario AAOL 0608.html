@@ -1,93 +1,164 @@
 <!DOCTYPE html>
-  <html lang="en">
+	<!-- Ortiz Lugo Aime Alexandra -->
+	<!-- 0608 -->
+	<!-- 5ºi  -->
 
-  <head>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Este es el link para que mi pagina tenga la tipografia de Playfair y firaCode , las llama de google-->
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <title>HORARIO</title>
   
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parrafos HTML</title>
-  
+	<!-- Inicia los estilos de mi tabla -->
+  <style>
+	/* Clase para ponerle tipografia a las horas  */
+    .hora_texto {
+      text-align: center; 
+      font-family: 'Fira Code';
+    }
+	/* Estilo del cuerpo , hace que la tabla se centre en la ventana */
+    body {
+      display: flex;
+      justify-content: center; 
+      align-items: center;   
+      min-height: 100vh;      
+      margin: 0;
+    }
+	/* Pone estilo a el titulo de la tabla , el que aparece sobre ella */
+    caption { 
+      color : #FF69B4;
+      font-family: "Playfair Display";
+      font-size: 30px;
+    }
+	/* Estilo para la tabla , pone el borde exterior y lo hace rosa  */
+    table {
+      border-collapse: collapse; 
+      border: 4px solid #FF69B4;  
+   }
+	/* Pone bordes a las celdas y filas de color rosa */
+    th, td {
+     border: 2px solid #FF69B4;  
+   }
+
+
+	/* Clases para ponerle color a cada celda segun la materia que corresponda */
+
+	/* Color verde oscuro */
+   .meza{
+	background-color:#8FBC8F;
+   }
+	/* Color rosa claro */
+   .reyes{
+	background-color:#FFB6C1 ;
+   }
+	/* Color naranja */
+   .gonzales{
+	background-color: #D2B48C;
+   }
+	/* Color gris */
+   .silveyra{
+	background-color: #D3D3D3 ;
+   }
+	/* Color amarillo */
+   .villa{
+	background-color: #EEE8AA ;
+   }
+	/* Color morado claro */
+   .ingles{
+	background-color: #E6E6FA ;
+   }
+	/* Color verde claro */
+   .nava{
+	background-color: #90EE90 ;
+   }
+	/* Color rosa oscuro */
+   .navat{
+	background-color: #D87093 ;
+   }
+    
+  </style>
   </head>
   <body>
-     <table border="1">
-       <caption> Horario </caption> 
-        <tr>
-          
-          <th>HORA:</th> 
-          <th>LUNES</th> 
-          <th>MARTES</th>
-          <th>MIERCOLES</th>
-          <th>JUEVES</th>
-          <th>VIERNES</th>
-          
-        </tr>
-        <tr> 
-            <td>7:00<br/>8:00</td> 
-            <td></td>
-            <td></td> 
-            <td></td>
-            <td></td> 
-            <td></td>
-        </tr>
-       <tr> 
-            <td></td> 
-            <td></td>
-            <td></td> 
-            <td></td>
-            <td></td> 
-            <td></td>
-        </tr>
-       <tr> 
-            <td></td> 
-            <td></td>
-            <td></td> 
-            <td></td>
-            <td></td> 
-            <td></td>
-        </tr>
-       <tr> 
-            <td></td> 
-            <td></td>
-            <td></td> 
-            <td></td>
-            <td></td> 
-            <td></td>
-        </tr>
-       <tr> 
-            <td></td> 
-            <td></td>
-            <td></td> 
-            <td></td>
-            <td></td> 
-            <td></td>
-        </tr>
-       <tr> 
-            <td></td> 
-            <td></td>
-            <td></td> 
-            <td></td>
-            <td></td> 
-            <td></td>
-        </tr>
-       <tr> 
-            <td></td> 
-            <td></td>
-            <td></td> 
-            <td></td>
-            <td></td> 
-            <td></td>
-        </tr>
-       <tr> 
-            <td></td> 
-            <td></td>
-            <td></td> 
-            <td></td>
-            <td></td> 
-            <td></td>
-        </tr>
-        
-    </table>
 
-  </body>
-  </html>
+	<!-- Inicia la tabla -->
+  <table>
+	<!-- Titulo de la tabla -->
+    <caption> HORARIO </caption>
+	<!-- fila para los dias y hora --> 
+    <tr>
+      <th>HORA:    </th> 
+      <th>LUNES    </th> 
+      <th>MARTES   </th>
+      <th>MIERCOLES</th>
+      <th>JUEVES   </th>
+      <th>VIERNES  </th>
+    </tr>
+	<!-- A partir de aqui , cada tr es una fila para poner las clases segun la hora , cada celda representa una clase a tomar -->
+    <tr> 
+      <td class="hora_texto"> 7:00 <br/> 8:00 </td> 
+      <td class="meza"> PROG M4S1  <br/>  Meza  <br/> AULA 22 </td>
+      <td>   <br/>   <br/>  </td>
+      <td class="meza"> PROG M4S1  <br/>  Meza  <br/> AULA 22 </td>
+      <td class="reyes"> 5*CNEyT 5  <br/> Reyes <br/> AULA 22 </td>
+      <td class="reyes"> 5*CNEyT 5  <br/> Reyes <br/> AULA 22 </td>
+    </tr>
+    <tr> 
+      <td class="hora_texto"> 8:00 <br/> 9:00 </td> 
+      <td class="reyes"> 5*CNEyT 5  <br/> Reyes <br/> AULA 22 </td>
+      <td>   <br/>   <br/>  </td>
+      <td class="meza"> PROG M4S1  <br/>  Meza  <br/> AULA 22 </td>
+      <td class="meza"> PROG M4S1  <br/>  Meza  <br/> AULA 22 </td>
+      <td class="meza"> PROG M4S1  <br/>  Meza  <br/> AULA 22 </td>
+    </tr>
+    <tr> 
+      <td class="hora_texto"> 9:00 <br/> 10:00 </td>       
+      <td class="reyes"> 5*CNEyT 5  <br/> Reyes <br/> AULA 22 </td>
+      <td class="silveyra">  5*TSdM 2 <br/> Silveyra  <br/> AULA 22 </td>
+      <td class="nava"> 5*Apli. Adm  <br/> Nava Maira  <br/> AULA 22 </td>
+      <td class="navat">  5*FS  <br/> Nava Maira  <br/> AULA 22 </td>
+      <td class="nava"> 5*Apli. Adm  <br/> Nava Maira  <br/> AULA 22 </td>
+    </tr>
+    <tr> 
+      <td class="hora_texto"> 10:00 <br/> 10:50 </td>  
+      <td class="gonzales"> PROG M4S2  <br/> Gonzales A  <br/> AULA 22 </td>
+      <td class="gonzales"> PROG M4S2  <br/> Gonzales A  <br/> AULA 22 </td>
+      <td class="gonzales"> PROG M4S2  <br/> Gonzales A  <br/> AULA 22 </td>
+      <td class="gonzales"> PROG M4S2  <br/> Gonzales A  <br/> AULA 22 </td>
+      <td class="gonzales"> PROG M4S2  <br/> Gonzales A  <br/> AULA 22 </td>
+    </tr>
+    <tr> 
+      <td class="hora_texto"> 10:50 <br/> 11:10 </td>  
+      <td colspan="6" style="text-align: center;">   RECESO  </td>
+    </tr>
+    <tr> 
+      <td class="hora_texto"> 11:10 <br/> 12:00 </td> 
+      <td class="silveyra">  5*TSdM 2 <br/> Silveyra  <br/> AULA 22 </td>
+      <td class="meza"> PROG M4S1  <br/>  Meza  <br/> AULA 22 </td>
+      <td class="silveyra">  5*TSdM 2 <br/> Silveyra  <br/> AULA 22 </td>
+      <td class="silveyra">  5*TSdM 2 <br/> Silveyra  <br/> AULA 22 </td>
+      <td class="silveyra">  5*TSdM 2 <br/> Silveyra  <br/> AULA 22 </td>
+    </tr>
+    <tr> 
+      <td class="hora_texto"> 12:00 <br/> 1:00 </td>  
+      <td class ="villa"> 5*CH 2  <br/> Villa <br/> AULA 22 </td>
+      <td class="meza"> PROG M4S1  <br/>  Meza  <br/> AULA 22 </td>
+      <td class ="villa"> 5*CH 2  <br/> Villa <br/> AULA 22 </td>
+      <td class="nava"> 5*Apli. Adm  <br/> Nava Maira  <br/> AULA 22 </td>
+      <td class ="villa"> 5*CH 2  <br/> Villa <br/> AULA 22 </td>
+    </tr>
+    <tr> 
+      <td class="hora_texto"> 1:00 <br/> 2:00 </td>  
+      <td class="ingles"> 5* Ingles 5  <br/> Gonzales P.  <br/> AULA 22 </td>
+      <td class="ingles"> 5* Ingles 5  <br/> Gonzales P.  <br/> AULA 22 </td>
+      <td class="ingles"> 5* Ingles 5  <br/> Gonzales P.  <br/> AULA 22 </td>
+      <td class="ingles"> 5* Ingles 5  <br/> Gonzales P.  <br/> AULA 22 </td>
+      <td class="ingles"> 5* Ingles 5  <br/> Gonzales P.  <br/> AULA 22 </td>
+    </tr>
+  </table>
+
+</body>
+</html>
     
