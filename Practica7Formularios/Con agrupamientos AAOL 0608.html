@@ -15,17 +15,35 @@
 <body> 
   
     <h2>Formularios con agrupamiento</h2>
+
+    <!-- Inicia el formulario, action="" define la URL a donde se enviaran los datos y method="post" envía la información de forma oculta -->
     <form action="" method="post">
+
+     <!--Agrupa un conjunto de campos relacionados, dibuja una caja con borde-->   
     <fieldset>
+       <!--Titulo del grupo-->   
     <legend>Datos personales</legend>
+
+         <!-- Texto que se visualiza para indicar al usuario que ingresara, pide tu nombre y apellido-->
     Nombre y apellido:
+        <!-- Formato de texto que el usuario ingresara (texto), nombre_apellido es la variable donde se guardara  -->
     <input type="text" name="nombre_apellido"><br>
+        
+
+        <!-- Texto que se visualiza para indicar al usuario que ingresara, pide un documento-->
     Documento valido:
+        <!-- Formato de texto que el usuario ingresara (file), documento es la variable donde se guardara  -->
     <input type="file" name="documento"><br>
+        
+
+        <!-- Texto que se visualiza para indicar al usuario que ingresara, pide su fecha de nacimiento-->
     Fecha de nacimiento:
-    
+        <!-- Formato de texto que el usuario ingresara (date),fecha_nacimiento es la variable donde se guardara  -->
     <input type="date" name="fecha_nacimiento">
+        <!--Cierra el grupo de campos-->
     </fieldset>
+
+        <!--Este repite el mismo formato que arriba , crea un agrupamiento de campos , luego define el formato de lo que ingresara y por ultimo define en la variable que se guardara-->
     <fieldset>
     <legend>Datos de estudio:</legend>
     Nombre de la escuela:
@@ -36,7 +54,17 @@
     <input type="date" name="fecha_egreso">
     </fieldset>
     <br>
+
+        <!--'button' es un boton que permite incluir texto , html e iconos-->
+        <!--'type=submit' le indica al navegador que al presionarlo debe procesar y enviar los datos-->
+        <!--En este caso i no sirve para letra en cursiva si no para insertar iconos-->
+        <!--la clase que llama invoca la clase de Font Awesome para mostrar un ícono de un avión de papel.-->
     <button type="submit">Enviar <i class="fa-regular fa-paper-plane"></i> </button>
+
+         <!--'button' es un boton que permite incluir texto , html e iconos-->
+        <!--'type=reset' le indica al navegador que al presionarlo debe limpiar la celda-->
+        <!--En este caso i no sirve para letra en cursiva si no para insertar iconos-->
+        <!--la clase que llama invoca el ícono de un bote de basura de Font Awesome..-->
     <button type="reset">Borrar <i class="fa fa-trash"></i></button>
     </form>
 </body>
