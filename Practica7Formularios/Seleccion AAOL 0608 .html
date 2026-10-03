@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+    <!-- Ortiz Lugo Aime Alexandra -->
+    <!-- 0608 -->
+    <!-- 5ºi -->
+  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios en HTML</title>
+    
+    <!-- Libreria de iconos en linea -->
+    <!-- Es un enlace para una hoja de estilos externa -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-
+    awesome/7.3.1/css/all.min.css">
+
+</head>
+<body> 
+    <h2>Formularios con seleccion</h2>
+  
+  <!-- Inicia el formulario, action="" define la URL a donde se enviaran los datos y y method="post" envía la información de forma oculta -->
+    <form action="" method="post">
+
+      <!-- Texto que se vizualiza para indicar al usuario que ingresara, pide tu nombre-->
+    Ingresa tu nombre:
+      <!-- Formato de texto que el usuario ingresara (texto), nombre es la variable donde se guardara  -->
+    <input type="text" name="nombre">
+    
+    <br>
+      <!-- Texto que se vizualiza para indicar al usuario que ingresara, pide tu país-->
+    Selecciona tu pais:
+      <!--Crea la lista desplegable , es decir que ocupa una sola linea-->
+      <!--'name' define la variable en la que se guardara la selección -->
+    <select name="pais">
+       <!--'option' define todos los elemento que se pueden selecionar-->
+       <!--'value' le asigna un valor a cada opcion , para reconocer tu respuesta-->
+       <!-- el texto fuera de option , es el que el usuario observa como opciones-->
+      <option value="1">Argentina</option>
+      <option value="2">España</option>
+      <option value="3">Mexico</option>
+      <option value="4">Guatemala</option>
+      <option value="5">Honduras</option>
+      <option value="6">El Salvador</option>
+      <option value="7">Venezuela</option>
+      <option value="8">Colombia</option>
+    </select>
+    <br>
+
+      <!-- Boton que al presionar , envia los datos (submit da la instrucción de procesar y enviar datos) -->
+       <!-- value muestra el texto visible del campo (enviar)-->
+    <input type="submit" value="enviar">
+
+       <!-- Boton que al presionar , restablece y limpia los campos (reset da la instrucción) -->
+       <!-- value muestra el texto visible del campo  (borrar)-->
+    <input type="reset" value="borrar">
+    </form>
+  </body>
+</html>
