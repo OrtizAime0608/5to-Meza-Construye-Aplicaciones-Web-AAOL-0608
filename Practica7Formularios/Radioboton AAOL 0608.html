@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+    <!-- Ortiz Lugo Aime Alexandra -->
+    <!-- 0608 -->
+    <!-- 5ºi -->
+  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios en HTML</title>
+    
+    <!-- Libreria de iconos en linea -->
+    <!-- Es un enlace para una hoja de estilos externa -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-
+    awesome/7.3.1/css/all.min.css">
+
+</head>
+<body> 
+
+    <h2>Formularios con Radioboton</h2>
+
+  <!-- Inicia el formulario, action="" define la URL a donde se enviaran los datos y y method="post" envía la información de forma oculta -->
+    <form action="" method="post">
+
+        <!-- Texto que se vizualiza para indicar al usuario que ingresara, pide tu nombre-->
+    Ingresa tu nombre:
+       <!-- Formato de texto que el usuario ingresara (texto), nombre es la variable donde se guardara  -->
+    <input type="text" name="nombre">
+      
+    <br>
+    Selecciona el maximo de estudios que tienes:
+    <br>
+
+      <!--type="radio": Crea un botón circular de selección única.-->
+      <!--'name' muestra la variable donde se guardara la opcion que elijas-->
+      <!--'value' le asigna un valor a cada opcion , el que selecciones sera el valor asignado que se guardara en estudios-->
+      <!---->
+    <input type="radio" name="estudios" value="1">Sin estudios <br>
+    <input type="radio" name="estudios" value="2">Primaria <br>
+    <input type="radio" name="estudios" value="3">Secundaria <br>
+    <input type="radio" name="estudios" value="4">Preparatoria <br>
+
+      <!-- Boton que al presionar , envia los datos (submit da la instrucción de procesar y enviar datos) -->
+       <!-- value muestra el texto visible del campo (enviar)-->
+    <input type="submit" value="enviar">
+
+      <!-- Boton que al presionar , restablece y limpia los campos (reset da la instrucción) -->
+       <!-- value muestra el texto visible del campo  (borrar)-->
+    <input type="reset" value="borrar">
+    </form>
+  
+</body>
+</html>
