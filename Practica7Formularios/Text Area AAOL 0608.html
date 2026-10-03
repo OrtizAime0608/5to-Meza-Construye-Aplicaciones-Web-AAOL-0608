@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+    <!-- Ortiz Lugo Aime Alexandra -->
+    <!-- 0608 -->
+    <!-- 5ºi -->
+  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios en HTML</title>
+    
+    <!-- Libreria de iconos en linea -->
+    <!-- Es un enlace para una hoja de estilos externa -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-
+    awesome/7.3.1/css/all.min.css">
+
+</head>
+<body>
+    <h2>Formulario con text area</h2>
+
+   <!-- Inicia el formulario action="" define la URL a donde se enviaran los datos y y method="post" envía la información de forma oculta -->
+      <form action="" method="post">
+        
+         <!-- Texto que se vizualiza para indicar al usuario que ingresara, pide tu nombre-->
+      Ingresa tu nombre:
+       <!-- Formato de texto que el usuario ingresara (texto) , nombre es la variable donde se guardara  -->
+      <input type="text" name="nombre">
+
+        
+       <!-- Salto de linea -->
+      <br>
+        
+        <!-- Texto que se vizualiza para indicar al usuario que ingresara, pide tu correo-->
+      Ingresa tu correo:
+        <!-- Formato de texto que el usuario ingresara (email) , correo es la variable donde se guardara  -->
+      <input type="email" name="correo">
+      <br>
+
+        <!-- Texto que se vizualiza para indicar al usuario que ingresara, pide algun comentario que tengas-->
+      Ingresa tus comentarios:
+        <!--textarea sirve para ingresar bloques de texto largo , de varias lineas-->
+        <!--'comentarios' es la variable donde se guardara el texto-->
+        <!-- 'row' Altura inicial medida en lineas de texto-->
+        <!-- 'cols' Ancho inicial medido en caracteres-->
+
+        
+      <textarea name="comentarios" rows="1" cols="10"></textarea>
+      <br>
+        
+        <!-- Boton que al presionar , envia los datos (submit da la instrucción de procesar y enviar datos) -->
+       <!-- value muestra el texto visible del campo (enviar)-->
+      <input type="submit" value="enviar">
+
+         <!-- Boton que al presionar , restablece y limpia los campos (reset da la instrucción) -->
+       <!-- value muestra el texto visible del campo  (borrar)-->
+      <input type="reset" value="borrar">
+      </form>
+</body>
+</html>
