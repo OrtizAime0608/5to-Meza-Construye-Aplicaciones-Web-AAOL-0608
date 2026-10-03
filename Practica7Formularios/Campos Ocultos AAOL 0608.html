@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+    <!-- Ortiz Lugo Aime Alexandra -->
+    <!-- 0608 -->
+    <!-- 5ºi -->
+  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios en HTML</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body> 
+    <h2>Formulario con campos ocultos</h2>
+
+  <!-- Inicia el formulario, action="" define la URL a donde se enviaran los datos y method="post" envía la información de forma oculta -->
+  <form action="" method="post">
+    <!--type="hidden": Crea un campo de formulario invisible para el usuario.-->
+    <!--'name=hora' nombre de la variable donde se guardara la información -->
+    <!--value es el valor que se enviara-->
+  <input type="hidden" name="hora" value="3:30">
+    
+    <!-- Texto que se visualiza para indicar al usuario que ingresara, pide tu nombre-->
+  Ingresa tu nombre:
+     <!-- Formato de texto que el usuario ingresara (texto), nombre es la variable donde se guardara  -->
+  <input type="text" name="nombre">
+  <br>
+
+    <!--'button' es un boton que permite incluir texto , html e iconos-->
+        <!--'type=submit' le indica al navegador que al presionarlo debe procesar y enviar los datos-->
+        <!--En este caso i no sirve para letra en cursiva si no para insertar iconos-->
+        <!--la clase que llama invoca la clase de Font Awesome para mostrar un ícono de un avión de papel.-->
+  <button type="submit">Enviar <i class="fa-regular fa-paper-plane"></i> </button>
+
+    <!--'button' es un boton que permite incluir texto , html e iconos-->
+        <!--'type=reset' le indica al navegador que al presionarlo debe limpiar la celda-->
+        <!--En este caso i no sirve para letra en cursiva si no para insertar iconos-->
+        <!--la clase que llama invoca el ícono de un bote de basura de Font Awesome..-->
+  <button type="reset">Borrar <i class="fa fa-trash"></i></button>
+  </form>
+</body>
+</html>
