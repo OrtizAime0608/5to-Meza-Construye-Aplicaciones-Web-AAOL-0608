@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+    <!-- Ortiz Lugo Aime Alexandra -->
+    <!-- 0608 -->
+    <!-- 5ºi -->
+  
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formularios en HTML</title>
+
+<!-- Libreria de iconos en linea -->
+<!-- Es un enlace para una hoja de estilos externa -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-
+awesome/7.3.1/css/all.min.css">
+
+</head>
+<body> 
+
+<h2>Formularios con checkbox</h2>
+
+  <!-- Inicia el formulario, action="" define la URL a donde se enviaran los datos y y method="post" envía la información de forma oculta -->
+<form action="" method="post">
+
+  <!-- Texto que se vizualiza para indicar al usuario que ingresara, pide tu nombre-->
+Ingresa tu nombre:
+  <!-- Formato de texto que el usuario ingresara (texto), nombre es la variable donde se guardara  -->
+<input type="text" name="nombre">
+
+  <!--type="checkbox": Crea una casilla cuadrada de selección múltiple. Permite que el usuario marque o desmarque una o varias opciones al mismo tiempo-->
+  <!--El texto dentro de 'name' es el nombre que se enviara al servidor para saber que opcion fue seleccionada y lo de fuera del input es el texto que el usuario vera con la casilla-->
+<br>
+Selecciona los lenguajes que conozcas:
+<br>
+<input type="checkbox" name="Java">Java <br>
+<input type="checkbox" name="Python"> Python <br>
+<input type="checkbox" name="C#">C# <br>
+<input type="checkbox" name="Flutter"> Flutter <br>
+</form>
+
+</body>
+</html>
