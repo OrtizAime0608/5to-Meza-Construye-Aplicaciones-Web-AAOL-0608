@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda en Línea</title>
+
+<style>
+
+    header {
+            background-color: #131921;
+            color: #F0F8FF;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 15px 20px;
+            gap: 15px;
+        }
+
+        .logo {
+            height: 35px;
+            width: auto;
+            flex-shrink: 0;
+        }
+
+        .barra-busqueda {
+            display: flex;
+            flex-grow: 1;
+            max-width: 70%;
+        }
+
+        .barra-busqueda select {
+            background-color: #f3f3f3;
+            border: none;
+            padding: 10px;
+            border-radius: 4px 0 0 4px;
+        }
+
+        .barra-busqueda input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+        }
+
+        .barra-busqueda button {
+            background-color: #febd69;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+        }
+	nav {
+	    display: flex;
+	    gap:15px;
+	    padding-top:15px;
+	    padding-bottom:15px;
+	    background-color: #232F3E;
+	 
+	}
+	nav a{
+	    text-decoration:none;
+	    color: #F0F8FF;
+	    font-family:"Roboto", Arial;
+	    font-size:15px;
+	}
+	.select-header {
+    	    background-color: transparent;
+    	    color: #FFFFFF;
+    	    border: none;
+    	    cursor: pointer;
+    	    font-family: inherit;
+    	    font-size: 14px;
+	}
+
+	.select-header option {
+            background-color: #131921;
+            color: #FFFFFF;
+	}
+
+	main {
+    background-color: #e3e6e6;
+    padding: 20px;
+}
+
+/* Contenedor que pone las tarjetas en fila */
+.contenedor-tarjetas {
+    display: flex;
+    flex-wrap: wrap; /* Si no caben en la pantalla, bajan a la siguiente fila */
+    gap: 15px;      /* Espacio entre tarjetas */
+}
+
+/* Cada tarjeta individual */
+.tarjeta {
+    background-color: white;
+    padding: 15px;
+    width: 17%;     /* Con 18% caben exactamente 5 tarjetas en una fila */
+    border-radius: 8px;
+}
+
+.tarjeta img {
+    width: 100%;    /* La imagen se adapta al ancho de la tarjeta */
+    height: auto;
+}
+
+
+.contenedor-tarjetas-abajo {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.tarjeta-doble {
+    background-color: white;
+    padding: 15px;
+    width: 23%;
+    border-radius: 8px;
+}
+
+.dobleimagenes {
+    display: flex;
+    gap: 10px;
+    margin-top:10px;
+}
+
+.dobleimagenes div {
+    width: 50%;
+    text-align: center;
+}
+
+.dobleimagenes img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+main h3 {
+    font-weight: 700; 
+    font-family:"Roboto",Arial;
+}
+ footer {
+            background-color: #232F3E;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-top: 2px solid #131921;
+            font-family: "Playfair Display", sans-serif; 
+            font-weight: 600;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+     <header>
+
+	<img src="img/encabezado.png" alt="Logo" class="logo">
+	<div class="barra-busqueda">
+    	<select name="categoria">
+        	<option value="todos">Todos</option>
+    	</select>
+
+    	<input type="text" placeholder="Buscar en Amazon" readonly>
+    	<button type="button">🔍</button>
+</div>
+	<select class="select-header" name="idioma">
+    		<option value="es">ES</option>
+	</select>
+
+	<select class="select-header" name="cuenta">
+    		<option value="cuenta"> Cuenta y Listas</option>
+	</select>
+    </header>
+
+
+    <div class="buscar-barra">
+    
+        <nav>
+            <a href=""> ☰ Todo </a>
+            <a href=""> Prime Video</a>
+            <a href=""> Cupones </a>
+	    <a href=""> Servicio al Cliente </a>
+	    <a href=""> Ofertas del Día </a>
+	    <a href=""> Listas </a>
+	    <a href=""> Tarjetas de Regalo </a>
+	    <a href=""> Vender </a>
+        </nav>
+
+
+
+
+        <main>
+    <div class="contenedor-tarjetas">
+
+        <div class="tarjeta">
+            <img src="img/cocina.png" alt="Cocina">
+        </div>
+
+
+        <div class="tarjeta">
+            <img src="img/belleza.png" alt="Belleza">
+        </div>
+
+
+        <div class="tarjeta">
+            <img src="img/closet.png" alt="Ropa">
+        </div>
+
+
+        <div class="tarjeta">
+            <img src="img/juguetes.png" alt="Juguetes">
+        </div>
+
+
+        <div class="tarjeta">
+            <img src="img/electronicos.png" alt="PC">
+        </div>
+
+
+    </div>
+
+
+	
+<div class="contenedor-tarjetas-abajo">
+
+    <div class="tarjeta-doble">
+        <h3>Conéctate con electrónicos</h3>
+        <div class="dobleimagenes">
+
+            <div>
+                <img src="img/audifonos.png" alt="Auriculares">
+            </div>
+            <div>
+                <img src="img/tableta.png" alt="Tabletas">
+            </div>
+
+        </div>
+    
+    </div>
+
+
+	<div class="tarjeta-doble">
+        <h3>Consigue los equipos y <br> accesorios más destacados</h3>
+        <div class="dobleimagenes">
+            <div>
+                <img src="img/ce.png" alt="Auriculares">
+            </div>
+            <div>
+                <img src="img/portatil.png" alt="Tabletas">
+            </div>
+        </div>
+   
+    </div>
+
+
+
+    <div class="tarjeta-doble">
+        <h3>Equípate para estar fit</h3>
+        <div class="dobleimagenes">
+            <div>
+                <img src="img/playera.png" alt="Ropa">
+            </div>
+            <div>
+                <img src="img/reloj.png" alt="Rastreadores">
+            </div>
+        </div>
+ 
+    </div>
+
+
+
+	<div class="tarjeta-doble">
+        <h3>Ropa por menos de USD 25</h3>
+        <div class="dobleimagenes">
+            <div>
+                <img src="img/mujeres.png" alt="Ropa">
+            </div>
+            <div>
+                <img src="img/hombres.jpg" alt="Rastreadores">
+            </div>
+        </div>
+   
+    </div>
+
+</div>
+
+
+</main>
+    </div>
+
+    <footer>
+        <p>Nombre: Ortiz Lugo Aime Alexandra | No. Control: 24308051280608</p>
+        <p>Semestre: 4to | Grupo: I | Especialidad: Programación</p>
+    </footer>
+</body>
+</html>
