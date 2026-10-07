@@ -2,14 +2,17 @@
 <html lang="es">
 <head>
 
+	<!--Link para la tipografia roboto y ubuntu-->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+	<!--Link para acceder a los iconos del avion de papel y el bote de basura-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda en Línea</title>
 
 <style>
-
+	/*Estilo para el encabezado , nos pone color , marca la separacion de los bordes, alinea los elementos al centro y los acomoda en una sola fila*/
     header {
             background-color: #131921;
             color: #F0F8FF;
@@ -20,18 +23,21 @@
             gap: 15px;
         }
 
+	/*Clase para el tamaño del logo del encabezado, ademas hace que si la pantalla se encoje , a imagen no ccambie su tamaño , si no que lo conserve tal cual */
         .logo {
             height: 35px;
             width: auto;
             flex-shrink: 0;
         }
 
+	/*Toma en 70% de la pantalla para la barra de busqueda y alinea todos los elementos en una sola linea*/
         .barra-busqueda {
             display: flex;
             flex-grow: 1;
             max-width: 70%;
         }
 
+	/*estilo para el menu desplegable , pone color , quita los bordes de la barra de busqueda y hace que las esquinas esten redondeadas */
         .barra-busqueda select {
             background-color: #f3f3f3;
             border: none;
@@ -39,12 +45,14 @@
             border-radius: 4px 0 0 4px;
         }
 
+		/*Estilo de la seccion donde recibe los datos la barra de busqueda , abarca el 100% de la barra de busqueda, quita los bordes*/
         .barra-busqueda input {
             width: 100%;
             padding: 10px;
             border: none;
         }
 
+		/*estilo para los botones de la barra de busqueda , pone color al fondo , define los espacios al rededor de el boton , redondea las esquinas y al momento de pasar el cursor sobre el te pone la manita*/
         .barra-busqueda button {
             background-color: #febd69;
             border: none;
@@ -52,6 +60,8 @@
             border-radius: 0 4px 4px 0;
             cursor: pointer;
         }
+
+		/*Estilo para la barra de navegacion horizontal , alinea todos los elementos segun su cantidad , le da un inter espaciado a todos los elementos , da espacio hacia arriba y abajo del texto y pone color azul un poco mas claro al fondo*/
 	nav {
 	    display: flex;
 	    gap:15px;
@@ -60,17 +70,23 @@
 	    background-color: #232F3E;
 	 
 	}
+
+		/*Estilo para la imagen de la tarjeta del formulario (logo de amazon)*/
 	.club-amazon {
     		margin-left: auto; /* Empuja el elemento completamente a la derecha */
     		padding-right: 15px; /* Espaciado opcional con la orilla de la pantalla */
 	}
 
+	/*Pone estilo a los enlaces de la barra de navegacion , le quita la linea de subrayados , define el tipo de letra y define su tamaño*/
 	nav a{
 	    text-decoration:none;
 	    color: #F0F8FF;
 	    font-family:"Roboto", Arial;
 	    font-size:15px;
 	}
+
+	/*Estilo para el menu despegable de el encabezado unicamente*/
+	/*pone color del fondo , color a la letra blanco, quita los bordes , define el tipo de fuente de letra y su tamaño*/
 	.select-header {
     	    background-color: transparent;
     	    color: #FFFFFF;
@@ -80,11 +96,12 @@
     	    font-size: 14px;
 	}
 
+	/*estilo para las opciones de el menu desplegable , pone color de fondo y color de las letras*/
 	.select-header option {
             background-color: #131921;
             color: #FFFFFF;
 	}
-
+ 	/*Estilo para el contendor principal , alinea los elementos en una sola fila , los alinea al centro , pone un espaciado interno , define el color de fondo y define la tipografia*/
 	main {
     background-color: #ffffff; 
     display: flex;
@@ -92,7 +109,10 @@
     align-items: center;
     padding: 30px 15px;
     font-family: 'Roboto', Arial, sans-serif;
-}main {
+}
+
+	/*Color de fondo y espaciado de los bordes de la pantalla de la parte principal de la página , ademas acomoda todo el coumnas para que el logo aparezca sobre el formuario*/
+main {
     background-color: #e3e6e6;
     padding: 20px;
 	display: flex;
@@ -100,6 +120,8 @@
     align-items: center;
 
 }
+
+	/*Estilo para el pie de pagina, pone color de fondo , color de la letra , alinea el texto al centro , pone un borde superior color azul oscuro , define el grosor de la letra y su tipografia*/
 	footer {
             background-color: #232F3E;
             color: white;
@@ -109,12 +131,16 @@
             font-family: "Playfair Display", sans-serif; 
             font-weight: 600;
         }
+	/*Le da estilo a los titulos , define el tamaño , la alineacion al centro , el color de la letra y su tipografia*/
 	h1{
 	   text-align:center;
 	   color:#232F3E;
 	   font-family: "Ubuntu", sans-serif; 
 	   font-size:40px;
 	}
+
+	/*Le da estilo a la tarjeta del formulario , el cuadro blanco tras el , define el color, 
+	le pone un borde de un px , define el maximo de ancho , pone espacio dentro del contenedor y hace que las esquinas se redondeen y tengan un igero difuminado*/
 	form {
     background-color: #ffffff;
     border: 1px solid #ddd;
@@ -125,12 +151,14 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
+	/*Le da estilo a la imagen del formulario , le da espacio en la parte inferior para no tocar el formulario , define automaticamente su alto segun la imagen original*/
 	.logo-formulario {
     display: block;
     margin: 0 auto 15px auto; 
     height: auto;
 	width:200px;
 }
+	/*define el grosor de la letra y el color para cada titulo de la agrupacion del formato*/
 	legend{
 		color: #232F3E;
 		font-weight: 600;
@@ -141,27 +169,35 @@
 </head>
 <body>
 
+<!--Inicia el encabezado-->
      <header>
 
+<!--Pone la imagen del logo en el encabezado-->
 	<img src="img/encabezado.png" alt="Logo" class="logo">
+		<!--Agrupa los elementos de la barra de busqueda y les pone el estilo de la barra de busqueda -->
 	<div class="barra-busqueda">
+		<!--Abre un menu despegable , para seleccionar las categorias que puedes buscar-->
     	<select name="categoria">
         	<option value="todos">Todos</option>
     	</select>
 
+		<!--Barra de busqueda que recibe texto , placeholder sirve para poner texto en gris de fondo que indica que hacer o escribir-->
     	<input type="text" placeholder="Buscar en Amazon" readonly>
+		<!--Boton sin funcion ,muestra una lupa y si fuera funcional le diria al navegador que envie los datos-->
     	<button type="button">🔍</button>
 </div>
+		<!--Menu despegable para seleccionar el idiona , option da las distinta opciones , en este caso es solo una--> 
 	<select class="select-header" name="idioma">
     		<option value="es">ES</option>
 	</select>
 
+		 <!--Menu despegable para seleccionar tu cuenta , en este caso no tenemos opciones de cuentas-->
 	<select class="select-header" name="cuenta">
     		<option value="cuenta"> Cuenta y Listas</option>
 	</select>
     </header>
 
-
+	<!--Agrupacion de elementos con el estilo de la barra de dezplazamiento horizontal , en ella es donde se une a otros links , en este caso , ninguna de las opciones contiene el url para redirigir , con excepcion de el link de club amazon , el cual es mi formulario -->
     <div class="buscar-barra">
     
         <nav>
@@ -177,19 +213,31 @@
         </nav>
  <main>
 
+	 <!--Aqui inicia nuestro formulario, en este caso no envia los datos a ninguna ubicacion-->
 	<form action="" method="post">
+		<!--añadimos nuestro logo dentro de a tarjeta del formulario -->
 	<img src="img/form.webp" class="logo-formulario">
+
+		<!--Aqui inicia el agrupamiento de los datos requeridos, en esta seccion son unicamente datos personales-->
 	<fieldset>
+		<!--Titulo del agrupamiento-->
 		<legend>Datos personales</legend>
+		<!--Texto que el usuario vizualiza , le indica que pide el campo-->
 			Nombre:
+		<!--Esta liea el formato de lo que se ingresara y la variable donde se guardara-->
+		<!--luego tenemos un salto de línea -->
 		<input type="text" name="nombre"><br>
 			Apellido:
 		<input type="text" name="apellido"><br>
 			Numero de cuenta:
+		<!--A diferencia del otro este recibe datos numéricos -->
 		<input type="number" name="cuenta"><br>
 			Fecha de nacimiento:
+		<!--Aqui unicamente recibe fechas -->
 		<input type="date" name="fecha_nacimiento">
 	</fieldset>
+
+		<!--Este es el mismo formato de agrupamiento que el anterior , pero en este todos los datos son de texto-->
 	<fieldset>
 		<legend>Direccion</legend>
 			Pais:
@@ -204,31 +252,43 @@
 		<input type="text" name="cp">
 	</fieldset>
 
+		<!--Este agrupamiento tiene un formato distinto , en el tenemos un menu desplegable que nos da 3 opciones-->
+
 	<fieldset>
+		<!--Titulo del agrupamiento -->
 	<legend>Tipo de Membresía</legend>
 		Plan:
+		<!--Menu desplegable-->
 	<select name="tipo_plan">
+		<!--opciones de el menu , el valor define que dato recibira la variable segun tu opción -->
 		<option value="mensual">Plan Mensual</option>
 		<option value="anual">Plan Anual</option>
 		<option value="estudiante">Plan Estudiantil</option>
 	</select>
 </fieldset>
 
+		<!--Por ultimo tenemos otro agrupamiento con checkbox-->
 <fieldset>
+	<!--Titulo del agrupamiento-->
 	<legend>Beneficios de interés</legend>
 		¿Qué beneficios usarás más?<br>
+	<!--Checkbox , permite hacer un menu de seleccion , donde todas las opciones aparecen como lista y puedes seleccionar vrias a la vez, name define el dato que recibira la variable-->
 	<input type="checkbox" name="envios"> Envíos gratis y rápidos<br>
 	<input type="checkbox" name="video"> Prime Video<br>
 	<input type="checkbox" name="music"> Amazon Music<br>
 	<input type="checkbox" name="ofertas"> Ofertas exclusivas
 </fieldset>
 <br>
+
+		<!--Por utlimo tenemos dos botones , uno para enviar los datos , en este caso no envia ni procesa nada, muestra el icono de un avion de papel-->
+		<!--El segudo limpia los campos, muestra el icono de un bote de basura-->
 	<button type="submit">Enviar <i class="fa-regular fa-paper-plane"></i> </button>
 	<button type="reset">Borrar <i class="fa fa-trash"></i></button>
 </form>
 </main>
     </div>
 
+	<!--Aqui inicia el pie de pagina -->
     <footer>
         <p>Nombre: Ortiz Lugo Aime Alexandra | No. Control: 24308051280608</p>
         <p>Semestre: 5to | Grupo: I | Especialidad: Programación</p>
