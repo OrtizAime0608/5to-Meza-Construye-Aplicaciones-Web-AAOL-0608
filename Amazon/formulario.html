@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda en Línea</title>
+
+<style>
+
+    header {
+            background-color: #131921;
+            color: #F0F8FF;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 15px 20px;
+            gap: 15px;
+        }
+
+        .logo {
+            height: 35px;
+            width: auto;
+            flex-shrink: 0;
+        }
+
+        .barra-busqueda {
+            display: flex;
+            flex-grow: 1;
+            max-width: 70%;
+        }
+
+        .barra-busqueda select {
+            background-color: #f3f3f3;
+            border: none;
+            padding: 10px;
+            border-radius: 4px 0 0 4px;
+        }
+
+        .barra-busqueda input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+        }
+
+        .barra-busqueda button {
+            background-color: #febd69;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+        }
+	nav {
+	    display: flex;
+	    gap:15px;
+	    padding-top:15px;
+	    padding-bottom:15px;
+	    background-color: #232F3E;
+	 
+	}
+	.club-amazon {
+    		margin-left: auto; /* Empuja el elemento completamente a la derecha */
+    		padding-right: 15px; /* Espaciado opcional con la orilla de la pantalla */
+	}
+
+	nav a{
+	    text-decoration:none;
+	    color: #F0F8FF;
+	    font-family:"Roboto", Arial;
+	    font-size:15px;
+	}
+	.select-header {
+    	    background-color: transparent;
+    	    color: #FFFFFF;
+    	    border: none;
+    	    cursor: pointer;
+    	    font-family: inherit;
+    	    font-size: 14px;
+	}
+
+	.select-header option {
+            background-color: #131921;
+            color: #FFFFFF;
+	}
+
+	main {
+    background-color: #ffffff; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 15px;
+    font-family: 'Roboto', Arial, sans-serif;
+}main {
+    background-color: #e3e6e6;
+    padding: 20px;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+	footer {
+            background-color: #232F3E;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-top: 2px solid #131921;
+            font-family: "Playfair Display", sans-serif; 
+            font-weight: 600;
+        }
+	h1{
+	   text-align:center;
+	   color:#232F3E;
+	   font-family: "Ubuntu", sans-serif; 
+	   font-size:40px;
+	}
+	form {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 350px;
+    padding: 20px 26px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+	.logo-formulario {
+    display: block;
+    margin: 0 auto 15px auto; 
+    height: auto;
+	width:200px;
+}
+	legend{
+		color: #232F3E;
+		font-weight: 600;
+
+}
+
+    </style>
+</head>
+<body>
+
+     <header>
+
+	<img src="img/encabezado.png" alt="Logo" class="logo">
+	<div class="barra-busqueda">
+    	<select name="categoria">
+        	<option value="todos">Todos</option>
+    	</select>
+
+    	<input type="text" placeholder="Buscar en Amazon" readonly>
+    	<button type="button">🔍</button>
+</div>
+	<select class="select-header" name="idioma">
+    		<option value="es">ES</option>
+	</select>
+
+	<select class="select-header" name="cuenta">
+    		<option value="cuenta"> Cuenta y Listas</option>
+	</select>
+    </header>
+
+
+    <div class="buscar-barra">
+    
+        <nav>
+            <a href=""> ☰ Todo </a>
+            <a href=""> Prime Video</a>
+            <a href=""> Cupones </a>
+	    <a href=""> Servicio al Cliente </a>
+	    <a href=""> Ofertas del Día </a>
+	    <a href=""> Listas </a>
+	    <a href=""> Tarjetas de Regalo </a>
+	    <a href=""> Vender </a>
+	    <a href="index.html" class="club-amazon"> Inicio </a>
+        </nav>
+ <main>
+
+	<form action="" method="post">
+	<img src="img/form.webp" class="logo-formulario">
+	<fieldset>
+		<legend>Datos personales</legend>
+			Nombre:
+		<input type="text" name="nombre"><br>
+			Apellido:
+		<input type="text" name="apellido"><br>
+			Numero de cuenta:
+		<input type="number" name="cuenta"><br>
+			Fecha de nacimiento:
+		<input type="date" name="fecha_nacimiento">
+	</fieldset>
+	<fieldset>
+		<legend>Direccion</legend>
+			Pais:
+		<input type="text" name="pais"><br>
+			Estado:
+		<input type="text" name="estado"><br>
+			Ciudad:
+		<input type="text" name="ciudad"><br>
+			Calle y numero:
+		<input type="text" name="calle"><br>
+			C.P:
+		<input type="text" name="cp">
+	</fieldset>
+
+	<fieldset>
+	<legend>Tipo de Membresía</legend>
+		Plan:
+	<select name="tipo_plan">
+		<option value="mensual">Plan Mensual</option>
+		<option value="anual">Plan Anual</option>
+		<option value="estudiante">Plan Estudiantil</option>
+	</select>
+</fieldset>
+
+<fieldset>
+	<legend>Beneficios de interés</legend>
+		¿Qué beneficios usarás más?<br>
+	<input type="checkbox" name="envios"> Envíos gratis y rápidos<br>
+	<input type="checkbox" name="video"> Prime Video<br>
+	<input type="checkbox" name="music"> Amazon Music<br>
+	<input type="checkbox" name="ofertas"> Ofertas exclusivas
+</fieldset>
+<br>
+	<button type="submit">Enviar <i class="fa-regular fa-paper-plane"></i> </button>
+	<button type="reset">Borrar <i class="fa fa-trash"></i></button>
+</form>
+</main>
+    </div>
+
+    <footer>
+        <p>Nombre: Ortiz Lugo Aime Alexandra | No. Control: 24308051280608</p>
+        <p>Semestre: 5to | Grupo: I | Especialidad: Programación</p>
+    </footer>
+</body>
+</html>
